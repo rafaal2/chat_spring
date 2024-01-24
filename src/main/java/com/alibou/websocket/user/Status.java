@@ -1,4 +1,4 @@
-package com.wvp.websocket.user;
+package com.alibou.websocket.user;
 
 public enum Status {
 

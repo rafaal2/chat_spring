@@ -1,15 +1,16 @@
-package com.wvp.websocket.chat;
+package com.alibou.websocket.chat;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.Date;
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Document
 public class ChatMessage {
@@ -20,5 +21,4 @@ public class ChatMessage {
     private String recipientId;
     private String content;
     private Date timestamp;
-
 }
